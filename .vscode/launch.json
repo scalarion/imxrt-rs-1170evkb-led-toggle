@@ -8,13 +8,13 @@
             "preLaunchTask": "${defaultBuildTask}",
             "name": "probe-rs tutorial",
             "type": "probe-rs-debug",
-            "request": "launch",
+            "request": "attach",
             "cwd": "${workspaceFolder}",
             "chip": "MIMXRT1170",
-            "flashingConfig": {
-                "flashingEnabled": true,
-                "haltAfterReset": true,
-            },
+            // "flashingConfig": {
+            // "flashingEnabled": true,
+            // "haltAfterReset": false,
+            // },
             "coreConfigs": [
                 {
                     "coreIndex": 1,

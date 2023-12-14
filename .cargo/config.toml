@@ -4,3 +4,4 @@ target = "thumbv7em-none-eabihf"
 # Link with the imxrt-rt linker script.
 [target.thumbv7em-none-eabihf]
 rustflags = ["-C", "link-arg=-Timxrt-link.x"]
+runner = 'probe-rs run --chip MIMXRT1170'

@@ -37,6 +37,7 @@ checksum = "8ec610d8f49840a5b376c69663b6369e71f4b34484b9b2eb29fb918d92516cb9"
 dependencies = [
  "bare-metal",
  "bitfield",
+ "critical-section",
  "embedded-hal",
  "volatile-register",
 ]
@@ -60,6 +61,12 @@ dependencies = [
  "quote",
  "syn",
 ]
+
+[[package]]
+name = "critical-section"
+version = "1.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7059fff8937831a9ae6f0fe4d658ffabf58f2ca96aa9dec1c889f936f705f216"
 
 [[package]]
 name = "embedded-hal"
@@ -213,6 +220,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "46b71a9d9206e8b46714c74255adcaea8b11e0350c1d8456165073c3f75fc81a"
 
 [[package]]
+name = "rtt-target"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3afa12c77ba1b9bf560e4039a9b9a08bb9cde0e9e6923955eeb917dd8d5cf303"
+dependencies = [
+ "critical-section",
+ "ufmt-write",
+]
+
+[[package]]
 name = "rustc_version"
 version = "0.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -257,7 +274,14 @@ dependencies = [
  "imxrt-rt",
  "imxrt1170evk-fcb",
  "panic-halt",
+ "rtt-target",
 ]
+
+[[package]]
+name = "ufmt-write"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e87a2ed6b42ec5e28cc3b94c09982969e9227600b2e3dcbc1db927a84c06bd69"
 
 [[package]]
 name = "unicode-ident"
