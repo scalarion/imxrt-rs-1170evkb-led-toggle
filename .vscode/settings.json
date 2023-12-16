@@ -3,4 +3,5 @@
         "Cargo.toml",
     ],
     "rust-analyzer.checkOnSave": true,
+    "cortex-debug.liveWatchRefreshRate": 250,
 }
