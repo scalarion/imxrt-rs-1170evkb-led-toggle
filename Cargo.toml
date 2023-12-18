@@ -1,5 +1,5 @@
 [package]
-name = "tutorial"
+name = "imxrt-rs-1170evkb-led-toggle"
 version = "0.1.0"
 edition = "2021"
 

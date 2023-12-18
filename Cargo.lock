@@ -144,6 +144,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "imxrt-rs-1170evkb-led-toggle"
+version = "0.1.0"
+dependencies = [
+ "cortex-m",
+ "imxrt-hal",
+ "imxrt-ral",
+ "imxrt-rt",
+ "imxrt1170evk-fcb",
+ "panic-halt",
+ "rtt-target",
+]
+
+[[package]]
 name = "imxrt-rt"
 version = "0.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -262,19 +275,6 @@ dependencies = [
  "proc-macro2",
  "quote",
  "unicode-ident",
-]
-
-[[package]]
-name = "tutorial"
-version = "0.1.0"
-dependencies = [
- "cortex-m",
- "imxrt-hal",
- "imxrt-ral",
- "imxrt-rt",
- "imxrt1170evk-fcb",
- "panic-halt",
- "rtt-target",
 ]
 
 [[package]]
