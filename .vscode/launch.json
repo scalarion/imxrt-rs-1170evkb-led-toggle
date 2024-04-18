@@ -13,6 +13,10 @@
             "executable": "target/thumbv7em-none-eabihf/debug/${workspaceFolderBasename}",
             "runToEntryPoint": "main",
             "showDevDebugOutput": "none",
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 4
+            },
             "servertype": "jlink",
             "device": "MIMXRT1176xxxA_M7",
             "svdFile": "imxrt1176_cm7.svd",
@@ -55,7 +59,7 @@
         // }
         // },
         // {
-        //     "name": "probe-rs tutorial",
+        //     "name": "probe-rs M7",
         //     "type": "probe-rs-debug",
         //     "request": "launch",
         //     "preLaunchTask": "${defaultBuildTask}",
@@ -83,10 +87,10 @@
         //             "svdFile": "imxrt1176_cm7.svd",
         //         },
         //     ],
-        //     // "env": {
-        //     // "DEFMT_LOG": "Info",
-        //     // "RUST_LOG": "Info",
-        //     // },
+        //     "env": {
+        //         "DEFMT_LOG": "Info",
+        //         "RUST_LOG": "Info",
+        //     },
         // },
     ]
 }

@@ -3,6 +3,7 @@
 #![no_main]
 #![no_std]
 
+use hal::gpio::Output;
 // Include the boot header like this. Otherwise,
 // it may be removed by the linker.
 use imxrt1170evk_fcb as _;
@@ -15,6 +16,11 @@ use cortex_m as cm7;
 use imxrt_hal as hal;
 use imxrt_ral as ral;
 use rtt_target::{rprintln, rtt_init_print};
+
+fn toggle<P1, P2>(led1: &Output<P1>, led2: &Output<P2>) {
+    led1.toggle();
+    led2.toggle();
+}
 
 #[entry]
 fn main() -> ! {
@@ -38,8 +44,7 @@ fn main() -> ! {
     loop {
         counter += 1;
         rprintln!("iteration: {:04}", counter);
-        led1.toggle();
-        led2.toggle();
-        cm7::asm::delay(100_000_000);
+        toggle(&led1, &led2);
+        cm7::asm::delay(200_000_000);
     }
 }
