@@ -40,6 +40,6 @@ fn main() -> ! {
         rprintln!("iteration: {:04}", counter);
         led1.toggle();
         led2.toggle();
-        cm7::asm::delay(200_000_000);
+        cm7::asm::delay(100_000_000);
     }
 }

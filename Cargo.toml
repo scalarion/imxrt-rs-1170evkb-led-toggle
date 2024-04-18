@@ -12,7 +12,7 @@ imxrt-ral = { version = "0.5.3", features = ["imxrt1176_cm7", "rt"] }
 imxrt-rt = { version = "0.1.3", features = ["device"] }
 imxrt1170evk-fcb = "0.1.0"
 panic-halt = "0.2.0"
-rtt-target = "0.4.0"
+rtt-target = "0.5.0"
 
 [build-dependencies]
 imxrt-rt = { version = "0.1.3", features = ["device"] }

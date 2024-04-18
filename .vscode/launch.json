@@ -54,39 +54,39 @@
         // ]
         // }
         // },
-        {
-            "name": "probe-rs tutorial",
-            "type": "probe-rs-debug",
-            "request": "launch",
-            "preLaunchTask": "${defaultBuildTask}",
-            "cwd": "${workspaceFolder}",
-            "chip": "MIMXRT1170",
-            "connectUnderReset": false,
-            "flashingConfig": {
-                "flashingEnabled": true,
-                "haltAfterReset": false,
-            },
-            "coreConfigs": [
-                {
-                    "coreIndex": 0,
-                    "rttEnabled": true,
-                    "rttChannelFormats": [
-                        {
-                            "channelNumber": 0,
-                            //        Format RTT data as String data
-                            "dataFormat": "String",
-                            //      Include host-side timestamps for every line of data transferred from the target RTT output
-                            "showTimestamps": true
-                        },
-                    ],
-                    "programBinary": "target/thumbv7em-none-eabihf/debug/${workspaceFolderBasename}",
-                    "svdFile": "imxrt1176_cm7.svd",
-                },
-            ],
-            // "env": {
-            // "DEFMT_LOG": "Info",
-            // "RUST_LOG": "Info",
-            // },
-        },
+        // {
+        //     "name": "probe-rs tutorial",
+        //     "type": "probe-rs-debug",
+        //     "request": "launch",
+        //     "preLaunchTask": "${defaultBuildTask}",
+        //     "cwd": "${workspaceFolder}",
+        //     "chip": "MIMXRT1170",
+        //     "connectUnderReset": false,
+        //     "flashingConfig": {
+        //         "flashingEnabled": true,
+        //         "haltAfterReset": false,
+        //     },
+        //     "coreConfigs": [
+        //         {
+        //             "coreIndex": 0,
+        //             "rttEnabled": true,
+        //             "rttChannelFormats": [
+        //                 {
+        //                     "channelNumber": 0,
+        //                     //        Format RTT data as String data
+        //                     "dataFormat": "String",
+        //                     //      Include host-side timestamps for every line of data transferred from the target RTT output
+        //                     "showTimestamps": true
+        //                 },
+        //             ],
+        //             "programBinary": "target/thumbv7em-none-eabihf/debug/${workspaceFolderBasename}",
+        //             "svdFile": "imxrt1176_cm7.svd",
+        //         },
+        //     ],
+        //     // "env": {
+        //     // "DEFMT_LOG": "Info",
+        //     // "RUST_LOG": "Info",
+        //     // },
+        // },
     ]
 }
